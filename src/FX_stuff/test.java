@@ -1,3 +1,14 @@
+package FX_stuff;
+
+//import javafx.application.Application;
+//import javafx.event.EventHandler;
+//import javafx.scene.Group;
+//import javafx.scene.Scene;
+//import javafx.scene.input.*;
+//import javafx.scene.paint.Color;
+//import javafx.scene.text.Text;
+//import javafx.stage.Stage;
+
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
@@ -8,7 +19,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
- * Demonstrates a drag-and-drop feature.
+ * Demonstrates a FX_stuff.drag-and-drop feature.
  */
 public class test extends Application {
 
@@ -29,7 +40,7 @@ public class test extends Application {
 
         source.setOnDragDetected(new EventHandler <MouseEvent>() {
             public void handle(MouseEvent event) {
-                /* drag was detected, start drag-and-drop gesture*/
+                /* FX_stuff.drag was detected, start FX_stuff.drag-and-drop gesture*/
                 System.out.println("onDragDetected");
 
                 /* allow any transfer mode */
@@ -63,7 +74,7 @@ public class test extends Application {
 
         target.setOnDragEntered(new EventHandler <DragEvent>() {
             public void handle(DragEvent event) {
-                /* the drag-and-drop gesture entered the target */
+                /* the FX_stuff.drag-and-drop gesture entered the target */
                 System.out.println("onDragEntered");
                 /* show to the user that it is an actual gesture target */
                 if (event.getGestureSource() != target &&
@@ -105,7 +116,7 @@ public class test extends Application {
 
         source.setOnDragDone(new EventHandler <DragEvent>() {
             public void handle(DragEvent event) {
-                /* the drag-and-drop gesture ended */
+                /* the FX_stuff.drag-and-drop gesture ended */
                 System.out.println("onDragDone");
                 /* if the data was successfully moved, clear it */
                 if (event.getTransferMode() == TransferMode.MOVE) {

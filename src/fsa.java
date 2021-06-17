@@ -1,3 +1,8 @@
+/**
+ *  any FSA should have these states,
+ *  the interface could help with polymporphism
+ *
+ */
 public interface fsa {
 
 

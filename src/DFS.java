@@ -1,7 +1,12 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
+
+/** the DFS class has simple nodes that
+ * are either accept, or not, and has a clearly defined branch for each outcome.
+ * because of this, checks for invalid placements must occur before running or else
+ * it is not a DFS
+ *
+ */
 public class DFS {
     private State start_state;
     private State current_state;
