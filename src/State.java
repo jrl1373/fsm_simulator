@@ -64,4 +64,9 @@ public class State {
     public boolean isAccept() {
         return accept;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

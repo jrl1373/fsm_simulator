@@ -13,6 +13,7 @@ public class DFA {
     private HashMap<String,State> states = new HashMap<>();
 
 
+
     public DFA(){
         this.start_state = new State("start");
         states.put("start",start_state);
