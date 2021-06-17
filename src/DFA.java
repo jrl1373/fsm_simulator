@@ -7,13 +7,13 @@ import java.util.HashMap;
  * it is not a DFS
  *
  */
-public class DFS {
+public class DFA {
     private State start_state;
     private State current_state;
     private HashMap<String,State> states = new HashMap<>();
 
 
-    public DFS(){
+    public DFA(){
         this.start_state = new State("start");
         states.put("start",start_state);
     }
@@ -54,6 +54,8 @@ public class DFS {
         start.add_transition(end,cond);
         return true;
     }
+
+
 
 
 
